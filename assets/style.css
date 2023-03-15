@@ -1,0 +1,150 @@
+:root {
+  --baby-blue: #92cccd;
+  --blue: #445876;
+  --dark-grey: #31343d;
+  --transition: all 0.3s ease 0s;
+  --light-background: #ededf6;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 3rem;
+  padding: 20px;
+  background-color: var(--baby-blue);
+  height: 85%;
+  flex: 0 0 350px;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  background-color: var(--light-background);
+}
+
+header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark-grey);
+}
+
+header h1 {
+  width: 40%;
+  height: 90%;
+  align-self: flex-start;
+  display: inline-block;
+}
+
+header li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-self: center;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.content h2 {
+  width: 18%;
+  text-align: right;
+  padding: 15px;
+}
+.content > :nth-child(2) {
+  width: 75%;
+  border-left: var(--blue) solid;
+  padding-left: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-links {
+  color: var(--baby-blue);
+  font-size: 16px;
+  padding: 5px;
+}
+.hero {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("./image-placeholder-500x500-300x300.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.subtitle {
+  position: relative;
+  float: right;
+  background-color: var(--baby-blue);
+  top: 75%;
+  padding: 5px;
+  margin: 0px 10px 10px 0px;
+}
+
+.image-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+
+.first-image {
+  width: 100% !important;
+}
+.first-image > :nth-child(1) {
+  height: 400px;
+}
+
+.image-container figure {
+  width: 48%;
+  margin: 0 1% 0 1%;
+  position: relative;
+}
+.image-container img {
+  width: 100%;
+  height: 200px;
+  border: var(--baby-blue) solid 5px;
+}
+.image-subtitle {
+  position: relative;
+  left: 0%;
+  bottom: 5em;
+  background-color: var(--baby-blue);
+  display: inline-block;
+  padding: 5px;
+}
+/* Tablet display */
+@media screen and (max-width: 996px) {
+}
+
+/* Mobile display */
+@media screen and (max-width: 768px) {
+}
