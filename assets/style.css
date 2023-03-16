@@ -58,6 +58,11 @@ header {
   min-height: 105px;
 }
 
+header h1,
+.content {
+  color: var(--blue);
+}
+
 /* relative position, parent of avatar */
 .my-info {
   height: 90%;
