@@ -46,6 +46,7 @@ main {
   justify-self: center;
 }
 
+/* Beginning of the header selectors */
 header {
   width: 100%;
   height: 100px;
@@ -57,6 +58,7 @@ header {
   min-height: 105px;
 }
 
+/* relative position, parent of avatar */
 .my-info {
   height: 90%;
   min-width: 400px;
@@ -65,7 +67,7 @@ header {
   padding: 20px 40px 20px 20px;
   background-color: var(--baby-blue);
 }
-
+/* relative positioning for the avatar child of my-info class */
 .avatar {
   position: relative;
   height: 100%;
@@ -80,6 +82,7 @@ header {
   align-items: center;
 }
 
+/* inline block so that the list is side by side */
 .navigation li {
   display: inline-block;
   margin-right: 10px;
@@ -90,7 +93,9 @@ header {
   font-size: 1.5rem;
   padding: 5px;
 }
+/* End of the header selectors */
 
+/* Background image */
 .hero {
   width: 100%;
   height: 200px;
@@ -98,8 +103,10 @@ header {
   background-image: url("./stock-image.jpg");
   background-size: cover;
   background-position: center;
+  /* position relative so that subtite can be positioned relative to parent class */
   position: relative;
 }
+/* relative position, child of hero */
 .subtitle {
   position: relative;
   float: right;
@@ -108,6 +115,7 @@ header {
   padding: 5px;
   margin: 0px 10px 10px 0px;
 }
+/* Beginning of the content, about us, work and contact us */
 .content {
   width: 95%;
   display: flex;
@@ -140,28 +148,13 @@ header {
   flex-flow: row wrap;
   height: 100%;
 }
-
+/* relative position so that child can position relative to parent */
 .image-container figure {
   width: 48%;
   margin: 0 1% 0 1%;
   position: relative;
 }
-.image-container img {
-  width: 100%;
-  height: 300px;
-  border: var(--baby-blue) solid 5px;
-  opacity: 0.6;
-}
-
-.image-container img:hover {
-  opacity: 1;
-}
-.first-image {
-  width: 100% !important;
-}
-.first-image img {
-  height: 500px !important;
-}
+/* child of image-container figure, so that the subtitles for the images can be relative */
 .image-subtitle {
   position: relative;
   left: 0%;
@@ -172,6 +165,29 @@ header {
   max-width: 180px;
 }
 
+.image-container img {
+  width: 100%;
+  height: 300px;
+  border: var(--baby-blue) solid 5px;
+  opacity: 0.6;
+}
+
+.image-container img:hover {
+  opacity: 1;
+}
+
+/* to make the first image larger than the rest */
+.first-image {
+  width: 100% !important;
+}
+/* to make the first image larger than the rest */
+.first-image img {
+  height: 500px !important;
+}
+
+/* End of the content section, about us, work and contacts */
+
+/* footer */
 footer ul li a {
   padding-bottom: 30px;
   font-size: 1.1rem;
@@ -179,6 +195,7 @@ footer ul li a {
 
 /* Tablet display */
 @media screen and (max-width: 996px) {
+  /* changes the header into column so that it fits tablet viewport */
   header {
     height: 212px;
     flex-direction: column;
@@ -206,6 +223,7 @@ footer ul li a {
 
 /* Mobile display */
 @media screen and (max-width: 768px) {
+  /* changes header so that it fits mobile viewport */
   header {
     display: flex;
     height: 300px;
@@ -229,25 +247,27 @@ footer ul li a {
     left: 185px;
     top: -55px;
   }
+  /* rearrange list so that it's top down instead of side by side */
   .navigation {
     margin: 0;
     height: 60%;
     display: flex;
     align-items: center;
   }
-
+  /* rearrange list so that it's top down instead of side by side */
   .navigation li {
     text-align: center;
     padding-bottom: 5px;
     margin: 0;
     display: block;
   }
-
+  /* rearrange flex direction to column so that the title appears above the content */
   .content {
     flex-direction: column;
     align-items: center;
     width: 100%;
   }
+
   .content h2 {
     width: 100%;
     text-align: center;
@@ -270,9 +290,12 @@ footer ul li a {
     height: 30px;
     text-align: center;
   }
+
+  /* makes all images in work section top down */
   .image-container figure {
     width: 100%;
   }
+  /* makes all images in work section same size */
   .image-container img {
     height: 400px;
   }

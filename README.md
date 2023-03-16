@@ -28,6 +28,9 @@ https://timebytes.github.io/Andy-Zhong-Portfolio/
 Hero background image from pixabay.com
 https://pixabay.com/photos/water-sea-caribbean-background-1330252/
 
+Reset.css from University of Toronto GitLabs week 2 mini project
+https://utoronto.bootcampcontent.com/utoronto-bootcamp/UTOR-VIRT-FSF-PT-02-2023-U-LOLC/-/tree/main/02-Advanced-CSS/01-Activities/28-Stu_Mini-Project
+
 ## License
 
 MIT License
