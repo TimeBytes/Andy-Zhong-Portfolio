@@ -133,7 +133,7 @@ header h1,
 .hero {
   height: 200px;
   margin-bottom: 25px;
-  background-image: url("./stock-image.jpg");
+  background-image: url("../images/stock-image.jpg");
   background-size: cover;
   background-position: center;
 }

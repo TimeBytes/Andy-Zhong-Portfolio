@@ -12,13 +12,13 @@ Working on this project, I gained a better understanding of how to use Flexbox, 
 Using media queries, I made the webpage adaptable to different viewports.
 
 Desktop viewport
-![screenshot of desktop view](./assets/fullscreencapture.png)
+![screenshot of desktop view](./assets/images/fullscreencapture.png)
 
 Tablet viewport
-![screenshot of tablet view](./assets/fullscreencapture2.png)
+![screenshot of tablet view](./assets/images/fullscreencapture2.png)
 
 Mobile viewport
-![screenshot of mobile view](./assets/fullscreencapture3.png)
+![screenshot of mobile view](./assets/images/fullscreencapture3.png)
 
 Webpage Link
 https://timebytes.github.io/Andy-Zhong-Portfolio/
